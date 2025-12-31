@@ -27,11 +27,12 @@ function create_UIBox_your_collection_ringleaders()
 end
 
 -- Button callback for Collection Ringleaders button.
-G.FUNCS.your_collection_ringleaders = function(e)
+function G.FUNCS.your_collection_ringleaders(e)
   G.SETTINGS.paused = true
-  G.FUNCS.overlay_menu{
-    definition = create_UIBox_your_collection_ringleaders(),
-  }
+
+	local t = create_UIBox_your_collection_ringleaders()
+
+  G.FUNCS.overlay_menu{definition = t}
 end
 
 -- Overwrites the global set_discover_tallies method in order to append a tally for Ringleaders.
