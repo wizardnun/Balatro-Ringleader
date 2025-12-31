@@ -6,7 +6,7 @@ function create_UIBox_your_collection_ringleaders_button()
 	return UIBox_button({
 		-- TODO: Uncomment line below once your_collection_ringleaders is implemented.
 		-- button = 'your_collection_ringleaders',
-		label = { "Ringleaders" }, -- TODO: Localize using b_ringleaders
+		label = { localize('b_ringleaders') },
 		count = G.DISCOVER_TALLIES.ringleaders,
 		minw = 5,
 		minh = 1.7,
