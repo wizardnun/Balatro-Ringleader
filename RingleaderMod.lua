@@ -47,7 +47,7 @@ end
 
 -- Overwrites the global create_UIBox_your_collection to render the Rindleaders button.
 function create_UIBox_your_collection()
-  contents = createCollectionRef()
+  local contents = createCollectionRef()
 
   table.insert(contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes, #contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes[1] + 2, create_UIBox_your_collection_ringleaders_button())
   
