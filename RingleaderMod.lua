@@ -11,7 +11,7 @@ function create_UIBox_your_collection_ringleaders_button()
 		minw = 5,
 		minh = 1.7,
 		scale = 0.6,
-		id = 'your_collection_ringleaders'
+		id = 'your_collection_ringleaders',
 	})
 end
 
