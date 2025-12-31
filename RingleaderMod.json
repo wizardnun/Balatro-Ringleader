@@ -2,9 +2,9 @@
     "id": "Ringleader",
     "name": "Ringleader",
     "author": ["wizardnun", "stirwell"],
-    "description": "Example desc.",
+    "description": "Adds Ringleaders to the game.",
     "prefix": "rldr",
-    "main_file": "ExampleMod.lua",
+    "main_file": "RingleaderMod.lua",
     "badge_colour": "c7638f",
     "dependencies": [
         "Steamodded (>=1.0.0~ALPHA-1225a)"
