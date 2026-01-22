@@ -1,7 +1,8 @@
-local createCollectionRef = create_UIBox_your_collection
+---@class RingleaderUI
+RingleaderUI = RingleaderUI or {}
 
 -- Creates a Collection Ringleaders Button node.
-function create_UIBox_your_collection_ringleaders_button()
+function RingleaderUI.create_UIBox_your_collection_ringleaders_button()
 	return UIBox_button({
 		-- TODO: Uncomment line below once your_collection_ringleaders is implemented.
 		-- button = 'your_collection_ringleaders',
@@ -15,7 +16,7 @@ function create_UIBox_your_collection_ringleaders_button()
 end
 
 -- Renders the Ringleaders Collection view.
-function create_UIBox_your_collection_ringleaders()
+function RingleaderUI.create_UIBox_your_collection_ringleaders()
 	local deck_tables = {}
 
 	G.your_collection = {}
@@ -25,11 +26,13 @@ function create_UIBox_your_collection_ringleaders()
 	-- TODO: Finish implementation.
 end
 
+local createCollectionRef = create_UIBox_your_collection
+
 -- Overwrites the global create_UIBox_your_collection to render the Rindleaders button.
 function create_UIBox_your_collection()
   local contents = createCollectionRef()
 
-  table.insert(contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes, #contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes[1] + 2, create_UIBox_your_collection_ringleaders_button())
+  table.insert(contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes, #contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes[1] + 2, RingleaderUI.create_UIBox_your_collection_ringleaders_button())
   
 	return contents
 end
