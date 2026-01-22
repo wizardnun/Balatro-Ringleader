@@ -1,0 +1,6 @@
+{
+    "workspace.library": [
+        "library"
+    ],
+    "diagnostics.globals": ["G", "SMODS"]
+}
