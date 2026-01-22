@@ -26,13 +26,16 @@ function RingleaderUI.create_UIBox_your_collection_ringleaders()
 	-- TODO: Finish implementation.
 end
 
-local createCollectionRef = create_UIBox_your_collection
+local create_collection_ref = create_UIBox_your_collection
 
 -- Overwrites the global create_UIBox_your_collection to render the Rindleaders button.
 function create_UIBox_your_collection()
-  local contents = createCollectionRef()
-
-  table.insert(contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes, #contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes[1] + 2, RingleaderUI.create_UIBox_your_collection_ringleaders_button())
+  local contents = create_collection_ref()
+	local buttons_container = contents.nodes[1].nodes[1].nodes[1].nodes[1].nodes
+	local insertion_index = 2 -- Insert button at second position 
+	local button = RingleaderUI.create_UIBox_your_collection_ringleaders_button()
+	
+  table.insert(buttons_container, insertion_index, button)
   
 	return contents
 end
