@@ -4,7 +4,6 @@ RingleaderUI = RingleaderUI or {}
 -- Creates a Collection Ringleaders Button node.
 function RingleaderUI.create_UIBox_your_collection_ringleaders_button()
 	return UIBox_button({
-		-- TODO: Uncomment line below once your_collection_ringleaders is implemented.
 		button = 'your_collection_ringleaders',
 		label = { localize('b_ringleaders') },
 		count = G.DISCOVER_TALLIES.ringleaders,
