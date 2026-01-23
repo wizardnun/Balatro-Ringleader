@@ -10,7 +10,14 @@ SMODS.ObjectType({
 -- Creates base Ringleader class
 SMODS.Ringleader = SMODS.Center:extend({
      set = "Ringleader",
-     atlas = "Ringleaders",
+     atlas = "Joker",
      discovered = false,
      unlocked = false,
+     rarity = 1,
+     cost = 0,
+     blueprint_compat = false,
+     perishable_compat = false,
+     eternal_compat = false,
+     config = {},
+
  })
