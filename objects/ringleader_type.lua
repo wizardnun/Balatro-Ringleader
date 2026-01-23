@@ -10,7 +10,7 @@ SMODS.ObjectType({
 -- Creates base Ringleader class
 SMODS.Ringleader = SMODS.Center:extend({
      set = "Ringleader",
-     atlas = "Joker",
+     atlas = "Joker", -- Sharing joker sprite altas for now, TODO: Replace with 'Ringleader' once art assets are created
      discovered = false,
      unlocked = false,
      rarity = 1,
