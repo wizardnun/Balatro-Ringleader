@@ -1,3 +1,14 @@
+local ringleader_atlas_key = "Ringleader"
+
+-- Registers Ringleaders spritesheet in SMODS Atlas.
+SMODS.Atlas({
+    key = ringleader_atlas_key,
+    path = "Ringleaders.png",
+    px = 71,
+    py = 95,
+    raw_key = true,
+})
+
 -- Creates Ringleader pool and tells SMODS how to handle them
 SMODS.ObjectType({
     key = "Ringleader",
@@ -10,7 +21,7 @@ SMODS.ObjectType({
 -- Creates base Ringleader class
 SMODS.Ringleader = SMODS.Center:extend({
      set = "Ringleader",
-     atlas = "Joker", -- Sharing joker sprite altas for now, TODO: Replace with 'Ringleader' once art assets are created
+     atlas = ringleader_atlas_key,
      discovered = false,
      unlocked = false,
      rarity = 1,
